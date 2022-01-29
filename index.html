@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd71748849.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="home-ui">
+      <div class="head-container">
+        <div class="trip-head">
+          <span class="back"
+            ><div class="back" onclick="mainUi()">
+              <div class="back-logo-circle">
+                <div class="arrow">
+                  <div class="top-arrow"></div>
+                  <div class="straight-arrow"></div>
+                  <div class="bottom-arrow"></div>
+                </div>
+              </div>
+              <div class="back-text">Back</div>
+            </div></span
+          >
+          <span class="trip-name"></span>
+        </div>
+        <div class="title left-title">
+          <p>
+            <span style="font-weight: bolder">Tasks</span
+            ><span style="font-weight: 100">Lists</span>
+          </p>
+        </div>
+        <div class="title right-title">
+          <div class="add add-logo" onclick="addList()">
+            <div class="circle"></div>
+            <div class="plus">
+              <div class="ver"></div>
+              <div class="hor"></div>
+            </div>
+          </div>
+          <div class="add add-text" onclick="addList()">
+            <span>Add List</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <p id="wel">No Items In The Todo Lists!!</p>
+      </div>
+    </div>
+
+    <!-- <div class="ui-trip">
+      <div class="title-trip">
+        <span
+          class="title-trip title-trip-space"
+          style="text-decoration-thickness: 2px"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        ><span class="title-trip" id="kkk"></span>
+        <span
+          class="title-trip title-trip-space"
+          style="text-decoration-thickness: 2px"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+      <br /><br /><br />
+      <div class="back" onclick="mainUi()">
+        <div class="back-logo-circle">
+          <div class="arrow">
+            <div class="top-arrow"></div>
+            <div class="straight-arrow"></div>
+            <div class="bottom-arrow"></div>
+          </div>
+        </div>
+        <div class="back-text">Back</div>
+      </div>
+      <br /><br />
+      <div class="container-card-trip">
+        <div class="item-container-trip"></div>
+        <div id="item-controls">
+          <i
+            class="fa fa-trash-o"
+            style="font-size: 30px"
+            onclick="removeCardTrip()"
+          ></i>
+          <div class="add-new-item" onclick="addTask(this)">
+            <div class="circle"></div>
+            <div class="plus">
+              <div class="ver"></div>
+              <div class="hor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="new-list">
+      <form action="">
+        <label for="new">Add New List</label><br />
+        <input class="input-list" type="text" name="new" id="newlist" /><br />
+        <div class="buttons">
+          <input
+            class="btn add-btn"
+            type="button"
+            value="ADD"
+            onclick="addListBtn()"
+          />
+          <input
+            class="btn"
+            type="button"
+            value="Close"
+            onclick="closeListBtn()"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="new-task">
+      <form action="">
+        <label for="new">Add New Task</label><br />
+        <input class="input-list" type="text" name="new" id="newtask" /><br />
+        <div class="buttons">
+          <input
+            class="btn add-btn"
+            type="button"
+            value="ADD"
+            onclick="addTaskBtn()"
+          />
+          <input
+            class="btn"
+            type="button"
+            value="Close"
+            onclick="closeTaskBtn()"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
